@@ -20,26 +20,36 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center text-center pt-24 px-4">
-  
-  <h1 className="text-6xl font-bold text-pink-500">
+      
+    {/* Hero Section */}
+<section
+  id="home"
+  className="min-h-screen bg-black flex flex-col items-center justify-center text-center px-6"
+>
+  <h1 className="text-6xl font-bold text-pink-500 animate-fadeIn">
     Dharshini Portfolio 🔥
   </h1>
 
-  <p className="text-xl mt-6 text-gray-300">
+  <p className="text-xl mt-4 text-gray-300 animate-fadeIn delay-200">
     B.Tech Information Technology
   </p>
 
-  <p className="mt-4 text-gray-400">
+  <p className="mt-2 text-gray-400 animate-fadeIn delay-400">
     AI & Data Analytics Enthusiast
   </p>
 
-  <button className="mt-8 px-6 py-3 bg-pink-500 hover:bg-pink-600 rounded-lg text-white font-semibold transition">
+  <a
+    href="#projects"
+    className="mt-8 px-6 py-3 bg-pink-500 text-black font-semibold rounded-lg hover:bg-pink-600 transition duration-300 animate-fadeIn delay-600"
+  >
     View My Work
-  </button>
-
+  </a>
 </section>
+
+  
+
+
+
 
       {/* About Section */}
       <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center px-6">
@@ -68,9 +78,61 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex items-center justify-center">
-        <h2 className="text-4xl font-bold text-pink-500">Contact</h2>
-      </section>
+      <section
+  id="contact"
+  className="min-h-screen flex flex-col items-center justify-center bg-black text-white px-6"
+>
+  <h2 className="text-4xl font-bold text-pink-500 mb-6">
+    Contact Me
+  </h2>
+
+  {/* Contact Info */}
+  <div className="space-y-4 text-center text-lg text-gray-300">
+
+    {/* Phone */}
+    <p>
+      📞 Phone:  
+      <a href="tel:+919962191639" className="text-pink-400 hover:underline ml-2">
+        +91 99621 91639
+      </a>
+    </p>
+
+    {/* Email */}
+    <p>
+      ✉️ Email:  
+      <a href="mailto:dharshhoffl@gmail.com" className="text-pink-400 hover:underline ml-2">
+        dharshhoffl@gmail.com
+      </a>
+    </p>
+
+    {/* Website Link */}
+    <p>
+      🔗 Website:  
+      <a href="https://dharshini-portfolio-murex.vercel.app/"
+         target="_blank"
+         rel="noopener noreferrer"
+         className="text-pink-400 hover:underline ml-2"
+      >
+        https://dharshini-portfolio-murex.vercel.app/
+      </a>
+    </p>
+
+    {/* LinkedIn */}
+    <p>
+      💼 LinkedIn:  
+      <a href="https://share.google/HoW6a7OMhklZqmr3s" 
+         target="_blank"
+         rel="noopener noreferrer"
+         className="text-pink-400 hover:underline ml-2"
+      >
+        Dharshini Mahalakshmi
+      </a>
+    </p>
+
+  </div>
+</section>
+
+
 
     </div>
   )
